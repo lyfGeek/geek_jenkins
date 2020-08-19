@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 
 @Controller
 public class OrderEntryController {
@@ -33,8 +34,8 @@ public class OrderEntryController {
      * 展示菜品
      *
      * @param model
-     * @param mid     菜品id （查询用）
-     * @param cid     菜品分类id （查询用）
+     * @param mid     菜品id （查询用）。
+     * @param cid     菜品分类id （查询用）。
      * @param request
      * @return
      */
@@ -146,7 +147,7 @@ public class OrderEntryController {
                            @RequestParam(value = "mname", required = true) String mname,
                            @RequestParam(value = "price", required = true) float price) throws UnsupportedEncodingException {
         if (mname != null && !mname.equalsIgnoreCase("")) {
-            mname = new String(mname.getBytes("ISO-8859-1"), "utf8");
+            mname = new String(mname.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
         }
 
         if (mid >= 1) {
@@ -245,7 +246,7 @@ public class OrderEntryController {
                                @RequestParam(value = "cid", required = true) int cid,
                                @RequestParam(value = "cname", required = true) String cname) throws UnsupportedEncodingException {
         if (cname != null && !cname.equalsIgnoreCase("")) {
-            cname = new String(cname.getBytes("ISO-8859-1"), "utf8");
+            cname = new String(cname.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
         }
 
         if (cid >= 1) {

@@ -6,11 +6,11 @@
     <title>添加菜品分类</title>
     <style>
         input.none {
-            border: 1
+            border: 1px
         }
 
         select.none {
-            border: 1
+            border: 1px
         }
     </style>
 </head>

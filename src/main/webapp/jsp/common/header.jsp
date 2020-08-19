@@ -28,7 +28,7 @@
                     <a data-toggle="dropdown">
                         <img class="nav-user-photo" src="../assets/avatars/user.jpg" alt="Jason's Photo"/>
                         <span class="user-info">
-                            <small>欢迎光临,</small>
+                            <small>欢迎光临, </small>
                             小同学
                         </span>
                     </a>

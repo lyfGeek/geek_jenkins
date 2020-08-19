@@ -43,7 +43,7 @@
 </div>
 <!-- #sidebar-shortcuts -->
 <ul class="nav nav-list">
-    <li <%if ("menuList".equalsIgnoreCase(_currentMenu)) {%> class='active'  <%}%>>
+    <li <%if ("menuList".equalsIgnoreCase(_currentMenu)) {%> class='active' <%}%>>
         <a href="/showMenus">
             <i class="icon-dashboard"></i>
             <span class="menu-text"> 主菜单</span>
@@ -57,7 +57,7 @@
         </a>
 
         <ul class="submenu">
-            <li <%if ("addMenu".equalsIgnoreCase(_currentMenu)) {%> class='active'  <%}%>>
+            <li <%if ("addMenu".equalsIgnoreCase(_currentMenu)) {%> class='active' <%}%>>
                 <a href="/addMenu">
                     <i class="icon-double-angle-right"></i>添加菜品
                 </a>
