@@ -20,6 +20,7 @@ import java.io.UnsupportedEncodingException;
 
 @Controller
 public class OrderEntryController {
+
     @Autowired
     MenuManager menuManager;
 
