@@ -11,6 +11,7 @@ import java.util.List;
 
 @Service
 public class MenuManagerImpl implements MenuManager {
+
     Logger logger = Logger.getLogger(MenuManagerImpl.class);
 
     @Autowired
@@ -64,4 +65,5 @@ public class MenuManagerImpl implements MenuManager {
         }
         return inpactRowNum;
     }
+
 }

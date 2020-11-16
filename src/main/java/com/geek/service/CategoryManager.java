@@ -5,14 +5,16 @@ import com.geek.model.Category;
 import java.util.List;
 
 public interface CategoryManager {
-    public List<Category> getAllCategories();
 
-    public Category getCategoryById(int cid);
+    List<Category> getAllCategories();
 
-    public int addCategory(String cname);
+    Category getCategoryById(int cid);
 
-    public int updateCategoryById(int cid, String cname);
+    int addCategory(String cname);
 
-    public int deleteCategoryById(int cid);
+    int updateCategoryById(int cid, String cname);
+
+    int deleteCategoryById(int cid);
+
 }
 

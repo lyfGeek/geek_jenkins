@@ -1,6 +1,7 @@
 package com.geek.model;
 
 public class Menu {
+
     int mid;
     int cid;
     String mname;

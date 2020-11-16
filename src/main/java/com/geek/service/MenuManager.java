@@ -5,15 +5,17 @@ import com.geek.model.Menu;
 import java.util.List;
 
 public interface MenuManager {
-    public List<Menu> getAllMenus();
 
-    public List<Menu> getMenusByMidCid(String mid, String cid);
+    List<Menu> getAllMenus();
 
-    public Menu getMenuByMid(String mid);
+    List<Menu> getMenusByMidCid(String mid, String cid);
 
-    public int addMenu(int cid, String mname, float price);
+    Menu getMenuByMid(String mid);
 
-    public int updateMenuByMid(int mid, int cid, String mname, float price);
+    int addMenu(int cid, String mname, float price);
 
-    public int deleteMenuByMid(int mid);
+    int updateMenuByMid(int mid, int cid, String mname, float price);
+
+    int deleteMenuByMid(int mid);
+
 }

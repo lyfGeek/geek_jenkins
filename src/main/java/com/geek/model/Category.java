@@ -20,4 +20,5 @@ public class Category {
     public void setCname(String cname) {
         this.cname = cname;
     }
+
 }

@@ -17,10 +17,12 @@ public class CategoryManagerImpl implements CategoryManager {
     @Autowired
     CategoryDAO categoryDAO;
 
+    @Override
     public List<Category> getAllCategories() {
         return categoryDAO.getAllCategories();
     }
 
+    @Override
     public Category getCategoryById(int cid) {
         List<Category> categories = categoryDAO.getCategoriesById(cid);
         if (categories == null || categories.size() == 0 || categories.size() > 1) {
@@ -30,15 +32,19 @@ public class CategoryManagerImpl implements CategoryManager {
         return categories.get(0);
     }
 
+    @Override
     public int addCategory(String cname) {
         return categoryDAO.addCategory(cname);
     }
 
+    @Override
     public int updateCategoryById(int cid, String cname) {
         return categoryDAO.updateCategoryById(cid, cname);
     }
 
+    @Override
     public int deleteCategoryById(int cid) {
         return categoryDAO.deleteCategoryById(cid);
     }
+
 }

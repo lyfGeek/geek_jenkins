@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 public interface MenuDAO {
+
     @Select("SELECT * FROM menus;")
     @Results({
             @Result(column = "mid", property = "mid"),
@@ -35,4 +36,5 @@ public interface MenuDAO {
     @Delete("delete from menus where mid = #{mid};")
     @Result(javaType = int.class)
     int deleteMenuByMid(@Param("mid") int mid);
+
 }

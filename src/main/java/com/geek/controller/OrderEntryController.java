@@ -22,20 +22,18 @@ import java.nio.charset.StandardCharsets;
 @Controller
 public class OrderEntryController {
 
+    private final Logger logger = Logger.getLogger(OrderEntryController.class);
     @Autowired
-    MenuManager menuManager;
-
+    private MenuManager menuManager;
     @Autowired
-    CategoryManager categoryManager;
-
-    Logger logger = Logger.getLogger(OrderEntryController.class);
+    private CategoryManager categoryManager;
 
     /**
-     * 展示菜品
+     * 展示菜品。
      *
      * @param model
-     * @param mid     菜品id （查询用）。
-     * @param cid     菜品分类id （查询用）。
+     * @param mid     菜品 id （查询用）。
+     * @param cid     菜品分类 id （查询用）。
      * @param request
      * @return
      */

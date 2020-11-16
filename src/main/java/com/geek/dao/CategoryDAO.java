@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 public interface CategoryDAO {
+
     @Select("SELECT * FROM categories;")
     @Results({
             @Result(column = "cid", property = "cid"),
@@ -38,4 +39,5 @@ public interface CategoryDAO {
     @Delete("delete from categories where cid = #{cid};")
     @Result(javaType = int.class)
     int deleteCategoryById(@Param("cid") int cid);
+
 }
